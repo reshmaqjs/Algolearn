@@ -1,8 +1,10 @@
 #include <stdio.h>
 int main() {
   int a[10][10], transpose[10][10], r, c;
-  printf("Enter rows and columns: ");
-  scanf("%d %d", &r, &c);
+  printf("Enter rows: ");
+  scanf("%d", &r);
+  printf("Enter columns: ");
+  scanf("%d", &c);
 
   // asssigning elements to the matrix
   printf("\nEnter matrix elements:\n");
