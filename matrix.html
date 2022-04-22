@@ -1,0 +1,188 @@
+<html>
+<head>
+<style>
+.sp{
+        color: #051c3a;
+         width:30px ;
+         background-color: #a0c5e7;
+          }
+
+          #header {
+  width: 100%;
+  position: relative;
+  top: 0;
+  background-color: #54bedb;
+  height: 100px;
+  margin: 0;
+  color: rgb(10, 1, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+td{
+  padding: 10px;
+  width: 20px;
+}
+#mig{
+  font-size: 15;
+}
+#big{
+  font-size: 20;
+}
+#lig{
+  font-size: 150;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+</style>
+</head>
+<body>
+
+    <div id="header">
+        <h2>Matrix operation
+          <span class="sp"><a href="home.html" >Home</a></span>
+          <span class="sp"><a href="sort.html">Sorting</a></span>
+          <span class="sp"><a href="searchandsort.html">Searching and sorting</a></span>
+        <span class="sp"> <a href="./index.html"> Maze Path</a>  </span>  </h2>
+    </div>
+<div>
+  <h1 id="big">Matrix addition</h1>
+  </div>
+  <div>
+    <table id="mig">
+    <tr> <td rowspan="5" id="lig">[</td> <td></td>    <td></td>    <td></td>    <td rowspan="5" id="lig">]</td>      <td></td>    <td rowspan="5" id="lig">[</td> <td></td>  <td></td>    <td></td>  <td rowspan="5" id="lig">]</td>  <td></td>            <td rowspan="5" id="lig">[</td> <td></td>  <td></td> <td></td> <td rowspan="5" id="lig">]</td> </tr>
+    <tr>  <td>A11</td>  <td>A12</td>  <td>A13</td>                                       <td></td>     <td>B11</td>  <td>B12</td>  <td>B13</td>  <td></td>          <td>A11+B11</td>  <td>A12+B12</td> <td>A13+B13</td>  </tr>
+    <tr>  <td>A21</td>  <td>A22</td>  <td>A23</td>                                <td id="big">+</td> <td>B21</td>  <td>B22</td>  <td>B23</td>  <td id="big">=</td>  <td>A21+B21</td>  <td>A22+B22</td> <td>A23+B23</td>  </tr>
+    <tr>  <td>A31</td>  <td>A32</td>  <td>A33</td>                                      <td></td>     <td>B31</td>  <td>B32</td>  <td>B33</td>  <td></td>            <td>A31+B31</td>  <td>A32+B32</td> <td>A33+B33</td>  </tr>
+    <tr>  <td></td>    <td></td>    <td></td>                                          <td></td>   <td></td>    <td></td>    <td></td>    <td></td>             <td></td>  <td></td> <td></td>  </tr>
+    </table>     
+    </div>
+  <div>
+<table id="mig">
+<tr> <td rowspan="5" id="lig">[</td> <td></td>    <td></td>    <td></td>    <td rowspan="5" id="lig">]</td>      <td></td>    <td rowspan="5" id="lig">[</td> <td></td>  <td></td>    <td></td>  <td rowspan="5" id="lig">]</td>  <td></td>            <td rowspan="5" id="lig">[</td> <td></td>  <td></td> <td></td> <td rowspan="5" id="lig">]</td> </tr>
+<tr>  <td>13</td>  <td>18</td>  <td>25</td>                                       <td></td>     <td>14</td>  <td>36</td>  <td>29</td>  <td></td>          <td>27</td>  <td>54</td> <td>54</td>  </tr>
+<tr>  <td>23</td>  <td>20</td>  <td>12</td>                                <td id="big">+</td> <td>15</td>  <td>16</td>  <td>38</td>  <td id="big">=</td>  <td>38</td>  <td>36</td> <td>50</td>  </tr>
+<tr>  <td>17</td>  <td>31</td>  <td>30</td>                                      <td></td>     <td>18</td>  <td>47</td>  <td>21</td>  <td></td>            <td>35</td>  <td>78</td> <td>51</td>  </tr>
+<tr>  <td></td>    <td></td>    <td></td>                                          <td></td>   <td></td>    <td></td>    <td></td>    <td></td>             <td></td>  <td></td> <td></td>  </tr>
+</table>     
+</div>
+<hr color="green"><hr color="green">
+<div>
+<h1 id="big">Matrix multiplication</h1>
+[number of columns of first matrix should equal to number of rows of second matrix]
+</div>
+<div>
+  <table id="mig">
+    <tr> <td rowspan="5" id="lig">[</td> <td></td>    <td></td>    <td></td>    <td rowspan="5" id="lig">]</td>      <td></td>    <td rowspan="5" id="lig">[</td> <td></td>   <td></td>  <td rowspan="5" id="lig">]</td>  <td></td>            <td rowspan="5" id="lig">[</td> <td></td>  <td></td> <td rowspan="5" id="lig">]</td> </tr>
+    <tr>  <td bgcolor="#54bedb">3</td>  <td bgcolor="#4f7942">7</td>  <td bgcolor="#228b22">5</td>                                       <td></td>     <td bgcolor="#54bedb">3</td>  <td>5</td>    <td></td>          <td bgcolor="#66aafb">36</td>  <td>...</td>  </tr>
+    <tr>  <td>2</td>  <td>5</td>  <td>4</td>                                <td id="big">X</td> <td bgcolor="#4f7942">1</td>  <td>6</td>   <td id="big">=</td>  <td>...</td>  <td>...</td> </tr>
+    <tr>  <td>1</td>  <td>6</td>  <td>3</td>                                      <td></td>     <td bgcolor="#228b22">4</td>  <td>7</td>   <td></td>            <td>...</td>  <td>...</td>  </tr>
+    <tr>  <td></td>    <td></td>    <td></td>                                          <td></td>   <td></td>       <td></td>    <td></td>             <td></td>  <td></td>   </tr>
+    </table> 
+</div>
+<br>
+<font color="#7c0cff" size="5">3x3 + 7x1 + 5x4 = 36</font>
+<hr>
+
+
+<div>
+  <table id="mig">
+    <tr> <td rowspan="5" id="lig">[</td> <td></td>    <td></td>    <td></td>    <td rowspan="5" id="lig">]</td>      <td></td>    <td rowspan="5" id="lig">[</td> <td></td>   <td></td>  <td rowspan="5" id="lig">]</td>  <td></td>            <td rowspan="5" id="lig">[</td> <td></td>  <td></td> <td rowspan="5" id="lig">]</td> </tr>
+    <tr>  <td bgcolor="#54bedb">3</td>  <td bgcolor="#4f7942">7</td>  <td bgcolor="#228b22">5</td>                                       <td></td>     <td >3</td>  <td bgcolor="#54bedb">5</td>    <td></td>          <td>36</td>  <td bgcolor="#66aafb">92</td>  </tr>
+    <tr>  <td>2</td>  <td>5</td>  <td>4</td>                                <td id="big">X</td> <td>1</td>  <td bgcolor="#4f7942">6</td>   <td id="big">=</td>  <td>...</td>  <td>...</td> </tr>
+    <tr>  <td>1</td>  <td>6</td>  <td>3</td>                                      <td></td>     <td>4</td>  <td bgcolor="#228b22">7</td>   <td></td>            <td>...</td>  <td>...</td>  </tr>
+    <tr>  <td></td>    <td></td>    <td></td>                                          <td></td>   <td></td>       <td></td>    <td></td>             <td></td>  <td></td>   </tr>
+    </table> 
+</div>
+<br>
+<font color="#7c0cff" size="5">3x5 + 7x6 + 5x7 = 92</font>
+<hr>
+
+
+<div>
+  <table id="mig">
+    <tr> <td rowspan="5" id="lig">[</td> <td></td>    <td></td>    <td></td>    <td rowspan="5" id="lig">]</td>      <td></td>    <td rowspan="5" id="lig">[</td> <td></td>   <td></td>  <td rowspan="5" id="lig">]</td>  <td></td>            <td rowspan="5" id="lig">[</td> <td></td>  <td></td> <td rowspan="5" id="lig">]</td> </tr>
+    <tr>  <td>3</td>  <td>7</td>  <td>5</td>                                       <td></td>     <td bgcolor="#54bedb">3</td>  <td>5</td>    <td></td>          <td>36</td>  <td>92</td>  </tr>
+    <tr>  <td bgcolor="#54bedb">2</td>  <td bgcolor="#4f7942">5</td>  <td  bgcolor="#228b22">4</td>                                <td id="big">X</td> <td bgcolor="#4f7942">1</td>  <td>6</td>   <td id="big">=</td>  <td bgcolor="#66aafb">27</td>  <td>...</td> </tr>
+    <tr>  <td>1</td>  <td>6</td>  <td>3</td>                                      <td></td>     <td bgcolor="#228b22">4</td>  <td>7</td>   <td></td>            <td>...</td>  <td>...</td>  </tr>
+    <tr>  <td></td>    <td></td>    <td></td>                                          <td></td>   <td></td>       <td></td>    <td></td>             <td></td>  <td></td>   </tr>
+    </table> 
+</div>
+<br>
+<font color="#7c0cff" size="5">2x3 + 5x1 + 4x4 = 27</font>
+<hr>
+
+
+<div>
+  <table id="mig">
+    <tr> <td rowspan="5" id="lig">[</td> <td></td>    <td></td>    <td></td>    <td rowspan="5" id="lig">]</td>      <td></td>    <td rowspan="5" id="lig">[</td> <td></td>   <td></td>  <td rowspan="5" id="lig">]</td>  <td></td>            <td rowspan="5" id="lig">[</td> <td></td>  <td></td> <td rowspan="5" id="lig">]</td> </tr>
+    <tr>  <td>3</td>  <td>7</td>  <td>5</td>                                       <td></td>     <td>3</td>  <td bgcolor="#54bedb">5</td>    <td></td>          <td>36</td>  <td>92</td>  </tr>
+    <tr>  <td bgcolor="#54bedb">2</td>  <td bgcolor="#4f7942">5</td>  <td  bgcolor="#228b22">4</td>                                <td id="big">X</td> <td>1</td>  <td bgcolor="#4f7942">6</td>   <td id="big">=</td>  <td>27</td>  <td  bgcolor="#66aafb">68</td> </tr>
+    <tr>  <td>1</td>  <td>6</td>  <td>3</td>                                      <td></td>     <td>4</td>  <td bgcolor="#228b22">7</td>   <td></td>            <td>...</td>  <td>...</td>  </tr>
+    <tr>  <td></td>    <td></td>    <td></td>                                          <td></td>   <td></td>       <td></td>    <td></td>             <td></td>  <td></td>   </tr>
+    </table> 
+</div>
+<br>
+<font color="#7c0cff" size="5">2x5 + 5x6 + 4x7 = 68</font>
+<hr>
+
+
+<div>
+  <table id="mig">
+    <tr> <td rowspan="5" id="lig">[</td> <td></td>    <td></td>    <td></td>    <td rowspan="5" id="lig">]</td>      <td></td>    <td rowspan="5" id="lig">[</td> <td></td>   <td></td>  <td rowspan="5" id="lig">]</td>  <td></td>            <td rowspan="5" id="lig">[</td> <td></td>  <td></td> <td rowspan="5" id="lig">]</td> </tr>
+    <tr>  <td>3</td>  <td>7</td>  <td>5</td>                                       <td></td>     <td bgcolor="#54bedb">3</td>  <td>5</td>    <td></td>          <td>36</td>  <td>92</td>  </tr>
+    <tr>  <td>2</td>  <td>5</td>  <td>4</td>                                <td id="big">X</td> <td bgcolor="#4f7942">1</td>  <td>6</td>   <td id="big">=</td>  <td>27</td>  <td>68</td> </tr>
+    <tr>  <td  bgcolor="#54bedb">1</td>  <td  bgcolor="#4f7942">6</td>  <td  bgcolor="#228b22">3</td>                                      <td></td>     <td bgcolor="#228b22">4</td>  <td>7</td>   <td></td>            <td bgcolor="#66aafb">21</td>  <td>...</td>  </tr>
+    <tr>  <td></td>    <td></td>    <td></td>                                          <td></td>   <td></td>       <td></td>    <td></td>             <td></td>  <td></td>   </tr>
+    </table> 
+</div>
+<br>
+<font color="#7c0cff" size="5">1x3 + 6x1 + 3x4 = 21</font>
+<hr>
+<div>
+  <table id="mig">
+    <tr> <td rowspan="5" id="lig">[</td> <td></td>    <td></td>    <td></td>    <td rowspan="5" id="lig">]</td>      <td></td>    <td rowspan="5" id="lig">[</td> <td></td>   <td></td>  <td rowspan="5" id="lig">]</td>  <td></td>            <td rowspan="5" id="lig">[</td> <td></td>  <td></td> <td rowspan="5" id="lig">]</td> </tr>
+    <tr>  <td>3</td>  <td>7</td>  <td>5</td>                                       <td></td>     <td>3</td>  <td bgcolor="#54bedb">5</td>    <td></td>          <td>36</td>  <td>92</td>  </tr>
+    <tr>  <td>2</td>  <td>5</td>  <td>4</td>                                <td id="big">X</td> <td>1</td>  <td bgcolor="#4f7942">6</td>   <td id="big">=</td>  <td>27</td>  <td>68</td> </tr>
+    <tr>  <td bgcolor="#54bedb">1</td>  <td bgcolor="#4f7942">6</td>  <td  bgcolor="#228b22">3</td>                                      <td></td>     <td>4</td>  <td bgcolor="#228b22">7</td>   <td></td>            <td>21</td>  <td  bgcolor="#66aafb">62</td>  </tr>
+    <tr>  <td></td>    <td></td>    <td></td>                                          <td></td>   <td></td>       <td></td>    <td></td>             <td></td>  <td></td>   </tr>
+    </table> 
+</div>
+<br>
+<font color="#7c0cff" size="5">1x5 + 6x6 + 3x7 = 62</font>
+<hr>
+
+
+
+
+
+<hr color="green"><hr color="green">
+<div>
+  <h1 id="big">Matrix transpose</h1>
+  </div>
+  <div>
+    <table id="mig">
+    <tr> <td></td> <td></td><td rowspan="5" id="lig">[</td> <td></td>    <td></td>    <td></td>    <td rowspan="5" id="lig">]</td> <td></td><td rowspan="5" id="lig">[</td> <td></td>    <td></td>    <td></td>  <td rowspan="5" id="lig">]</td>   </tr>
+    <tr>  <td></td> <td></td><td bgcolor="#54bedb">13</td>  <td bgcolor="#54bedb">18</td>  <td bgcolor="#54bedb">25</td>                                    <td></td>     <td bgcolor="#54bedb">13</td>  <td bgcolor="#66aafb">23</td>  <td bgcolor="#466bab">17</td>  </tr>
+    <tr>  <td id="big">Transpose</td> <td id="big">of</td> <td bgcolor="#66aafb">23</td>  <td bgcolor="#66aafb">20</td>  <td bgcolor="#66aafb">12</td>                                <td id="big">=</td> <td bgcolor="#54bedb">18</td>  <td bgcolor="#66aafb">20</td>  <td bgcolor="#466bab">31</td>   </tr>
+    <tr>  <td></td> <td></td><td bgcolor="#466bab">17</td>  <td bgcolor="#466bab">31</td>  <td bgcolor="#466bab">30</td>                                      <td></td>     <td bgcolor="#54bedb">25</td>  <td bgcolor="#66aafb">12</td>  <td bgcolor="#466bab">30</td>   </tr>
+    <tr> <td></td> <td></td> <td></td>    <td></td>    <td></td>                                          <td></td>   <td></td>    <td></td>    <td></td>    </tr>
+    </table>     
+    </div>
+<hr color="green"><hr color="green">
+<div>
+<h1 id="big">Matrix trace</h1>
+[To find trace , the matrix should be square matrix]
+</div>
+<div>
+<table id="mig">
+  <tr><td></td> <td></td><td rowspan="5" id="lig">[</td> <td></td>    <td></td>    <td></td>    <td rowspan="5" id="lig">] </td>      <td></td>  <td></td>  <td></td> <td></td> <td></td> <td></td> <td></td><td></td></tr>
+  <tr> <td></td> <td></td><td bgcolor="#54bedb">13</td>  <td>18</td>  <td>25</td>                                                     <td></td>  <td></td> <td></td> <td></td><td></td> <td></td> <td></td><td></td> </tr>
+  <tr> <td id="big">Trace</td> <td id="big">of</td><td>23</td>  <td bgcolor="#54bedb">20</td>  <td>12</td>                                           <td id="big">= </td> <td>13</td> <td>+</td> <td>20</td><td>+</td> <td>30</td> <td id="big">=</td><td>63</td> </tr>
+  <tr> <td></td> <td></td><td>17</td>  <td>31</td>  <td bgcolor="#54bedb">30</td>                                                      <td></td> <td></td> <td></td> <td></td>  <td></td> <td></td> <td></td><td></td></tr>
+  <tr> <td></td><td></td> <td></td>    <td></td>    <td></td>                                                                          <td></td> <td></td> <td></td> <td></td>  <td></td> <td></td> <td></td><td></td></tr>
+  </table>  
+
+</div>
+</body>
+</html>
